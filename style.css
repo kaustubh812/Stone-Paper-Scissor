@@ -174,16 +174,25 @@ body{
 /* Here rules section starts*/
 
 .container{
-    position: absolute;
+    position: fixed;
+    display: none;
     width: 300px;
     height: 325px;
-    top: 290px;
+    top: -290px;
     left: 1140px;
     border-radius: 13px;
     border: 7px;
     background-color: #004429;
     border-color: #FFFFFF;
     border-style: solid;
+}
+
+body.rulesTab-active .container{
+    top: 290px;
+}
+
+body.rulesTab-active .container{
+    display: block;
 }
 
 #close_button{
