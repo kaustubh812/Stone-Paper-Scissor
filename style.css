@@ -236,5 +236,10 @@ h1{
     letter-spacing: 0em;
     text-align: left;
     list-style-type: square;
-    
+   
 }
+
+ul li::marker {
+    color: #FFD600; 
+    font-size: 18px;
+  }
