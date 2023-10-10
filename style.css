@@ -171,6 +171,8 @@ body{
     text-align: center;
 }
 
+/* Here rules section starts*/
+
 .container{
     position: absolute;
     width: 300px;
@@ -184,21 +186,21 @@ body{
     border-style: solid;
 }
 
-#xb{
-    position: fixed;
+#close_button{
+    position: absolute;
     width: 50px;
     height: 50px;
-    top: 270px;
-    left: 1420px;
+    left: 270px;
+    top: -20px;
     border: 5px;
 }
 
 #x{
-    position: fixed;
+    position: absolute;
     width: 24px;
     height: 53px;
-    top: 215px;
-    left: 1433px;
+    left: 283px;
+    top: -77px;
     font-family: 'Dangrek', cursive;
     font-size: 44px;
     font-weight: 400;
@@ -243,3 +245,5 @@ ul li::marker {
     color: #FFD600; 
     font-size: 18px;
   }
+
+/* Here rules section ends */  
