@@ -18,3 +18,18 @@ function updateScoresFromLocalStorage() {
 window.addEventListener('load', function () {
     updateScoresFromLocalStorage();
 });
+
+// Code for the play again button
+
+// Function to handle the "PLAY AGAIN" button click
+function playAgain() {
+    // Redirect to the index.html page
+    window.location.href = "index.html";
+}
+
+// Find the "playbutton" element and add a click event listener
+const playButton = document.getElementById("playbutton");
+if (playButton) {
+    playButton.addEventListener("click", playAgain);
+}
+
