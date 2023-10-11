@@ -26,14 +26,17 @@ let choices = ["rock", "paper", "scissors"];
 
 document.getElementById("rock_option").addEventListener("click",function(){
     playRound("rock");
+    updateScores(); // Calls the function to update and save the scores
 });
 
 document.getElementById("paper_option").addEventListener("click",function(){
     playRound("paper");
+    updateScores();
 });
 
 document.getElementById("scissors_option").addEventListener("click",function(){
     playRound("scissors");
+    updateScores(); 
 });
 
 // Writing the function for playRound function
@@ -62,3 +65,28 @@ function playRound(playerChoice) {
     document.querySelector(".win.you").textContent = playerScore;
     document.querySelector(".win.com").textContent = computerScore;
 }
+
+// Saves the scores to local storage
+function updateScores(){
+
+    localStorage.setItem('playerScore', playerScore);
+    localStorage.setItem('computerScore', computerScore);
+
+}
+
+// Now we have to load the scores from local storage when the page loads
+
+window.addEventListener('load', function(){
+    let storedPlayerScore = localStorage.getItem('playerScore');
+    let storedComputerScore = localStorage.getItem('computerScore');
+
+    if (storedPlayerScore !== null) {
+        playerScore = parseInt(storedPlayerScore);
+        document.querySelector(".win.you").textContent = playerScore;
+    }
+
+    if (storedComputerScore !== null){
+        computerScore = parseInt(storedComputerScore);
+        document.querySelector(".win.com").textContent = computerScore
+    }
+});
