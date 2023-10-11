@@ -3,6 +3,7 @@ body{
     overflow-x: hidden;
 }
 
+/* Here we started scorecard code*/
 .header{
     position: absolute;
     width: 800px;
@@ -60,6 +61,8 @@ body{
     text-align: center;
     color: #252525;
 }
+
+/* Here we ended scorecard code*/
 
 #rock{
     position: absolute;

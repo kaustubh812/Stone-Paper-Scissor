@@ -2,6 +2,7 @@
 let openRulesTab = document.querySelector('#rules_button');
 let closeRulesTab = document.querySelector('#close');
 
+
 openRulesTab.addEventListener("click",function(){
     document.body.classList.add("rulesTab-active");
 })
