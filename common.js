@@ -32,4 +32,3 @@ const playButton = document.getElementById("playbutton");
 if (playButton) {
     playButton.addEventListener("click", playAgain);
 }
-

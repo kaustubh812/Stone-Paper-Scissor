@@ -66,58 +66,53 @@ body{
 
 #rock{
     position: absolute;
-    width: 80px;
-    height: 58.51px;
+    width: 60px;
+    height: 60px;
     top: 360px;
     left: 605px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #0074B6;
+    border-width: 17px;
+    padding: 20px;
+    background-color: white;
     z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 #scissor{
     position: absolute;
-    width: 37px;
-    height: 53.5px;
+    width: 57px;
+    height: 60px;
     top: 363px;
     left: 868px;
-    z-index: 99;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #BD00FF;
+    border-width: 17px;
+    padding: 20px;
+    background-color: white;
     transform: rotate(5.27deg);
+    z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 #paper{
     position: absolute;
-    width: 72px;
-    height: 72px;
+    width: 60px;
+    height: 60px;
     top: 548px;
     left: 730px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #ffa943;
+    border-width: 17px;
+    padding: 20px;
+    background-color: white;
     z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-#paperb{
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    top: 520px;
-    left: 700px;
-    z-index: 90;
-}
-
-#rockb{
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    top: 329px;
-    left: 580px;
-    z-index: 90;
-}
-
-#scissorb{
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    top: 329px;
-    left: 820px;
-    z-index: 90;
-}
 
 #line3{
     position: absolute;
@@ -137,20 +132,20 @@ body{
 .first{
     position: absolute;
     transform: rotate(60deg);
-    top: 480px;
-    left: 635px;
+    top: 500px;
+    left: 660px;
 }
 
 .second{
     position: absolute;
-    left: 700px;
-    top: 385px;
+    left: 734px;
+    top: 410px;
 }
 
 .third{
     position: absolute;
-    left: 760px;
-    top: 480px;
+    left: 800px;
+    top: 510px;
     transform: rotate(120deg);
 }
 
