@@ -49,6 +49,21 @@ if(nextButton){
 const playerChoice = localStorage.getItem("playerChoice");
 const computerChoice = localStorage.getItem("computerChoice");
 
+const choiceStyleMap = {
+    rock: {
+        borderColor: '#0074B6',
+        backgroundColor: 'white',
+    },
+    paper: {
+        borderColor: '#ffa943',
+        backgroundColor: 'white',
+    },
+    scissors: {
+        borderColor: '#BD00FF',
+        backgroundColor: 'white',
+    },
+};
+
 // Map the choice names to the corresponding image file names
 const choiceImageMap = {
     rock: "rock.png",
@@ -64,32 +79,32 @@ const computer = document.getElementById("computer");
 if (playerChoice && computerChoice) {
     player.src = choiceImageMap[playerChoice];
     computer.src = choiceImageMap[computerChoice];
+    
+    function applyChoiceStyles(element, choice) {
+        element.style.borderRadius = "50%";
+        element.style.borderStyle = "solid";
+        element.style.borderWidth = "17px";
+        element.style.padding = "20px";
+        element.style.backgroundColor = "white";
+        element.style.boxShadow = "0 0 20px rgba(0, 0, 0, 0.5)";
+    
+        if (choice === "rock") {
+            element.style.borderColor = "#0074B6";
+        } else if (choice === "scissors") {
+            element.style.borderColor = "#BD00FF";
+            element.style.transform = "rotate(5.27deg)";
+        } else if (choice === "paper") {
+            element.style.borderColor = "#ffa943";
+        }
+    }
+    
+    if (playerChoice) {
+        applyChoiceStyles(player, playerChoice);
+    }
+    
+    if (computerChoice) {
+        applyChoiceStyles(computer, computerChoice);
+    }
+    
+    
 }
-
-
-
-if (playerChoice && computerChoice) {
-    // Display the choices in the HTML
-    document.querySelector("#playerChoice").textContent = `You picked: ${playerChoice}`;
-    document.querySelector("#computerChoice").textContent = `Computer picked: ${computerChoice}`;
-} 
-
-
-// Inside the playRound function after determining the winner
-const resultText = document.querySelector("h2");
-
-if (playerChoice === computerChoice) {
-    resultText.textContent = "It's a TIE";
-} else if (
-    (playerChoice === "rock" && computerChoice === "scissors") ||
-    (playerChoice === "paper" && computerChoice === "rock") ||
-    (playerChoice === "scissors" && computerChoice === "paper")
-) {
-    // You win
-    resultText.textContent = "YOU WON";
-} else {
-    // Computer wins
-    resultText.textContent = "YOU LOST";
-}
-
-

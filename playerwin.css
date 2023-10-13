@@ -150,6 +150,59 @@ h3{
     border-style: solid;
 }
 
+#rock{
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    top: 360px;
+    left: 605px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #0074B6;
+    border-width: 17px;
+    padding: 20px;
+    background-color: white;
+    z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#scissor{
+    position: absolute;
+    cursor: pointer;
+    width: 57px;
+    height: 60px;
+    top: 363px;
+    left: 868px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #BD00FF;
+    border-width: 17px;
+    padding: 20px;
+    background-color: white;
+    transform: rotate(5.27deg);
+    z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#paper{
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    top: 548px;
+    left: 730px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #ffa943;
+    border-width: 17px;
+    padding: 20px;
+    background-color: white;
+    z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
 #rules_button{
     position: absolute;
     cursor: pointer;
