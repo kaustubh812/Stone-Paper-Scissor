@@ -91,7 +91,7 @@ body{
     top: 420px;
     left: 985px;
     z-index: 99;
-    animation: computerShadowAnimation 1s infinite alternate; /* Change the duration as needed */
+     /* Change the duration as needed */
 }
 
 
