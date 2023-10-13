@@ -51,6 +51,7 @@ function playRound(playerChoice) {
     // Determining the winner of round
     if (playerChoice === computerChoice) {
         // It's a tie
+        window.location.href = "tie.html"
     } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "paper" && computerChoice === "rock") ||
@@ -63,6 +64,7 @@ function playRound(playerChoice) {
     } else {
         // Computer wins the round
         computerScore++;
+        window.location.href = "computerwin.html";
     }
     
 
