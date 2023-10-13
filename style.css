@@ -153,6 +153,7 @@ body{
 
 #rules_button{
     position: absolute;
+    cursor: pointer;
     width: 119px;
     height: 40px;
     top: 650px;
@@ -204,6 +205,7 @@ body.rulesTab-active .container{
 
 #x{
     position: absolute;
+    cursor: pointer;
     width: 24px;
     height: 53px;
     left: 283px;

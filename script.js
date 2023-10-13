@@ -105,7 +105,7 @@ document.getElementById("rock_option").addEventListener("click", function () {
 
 document.getElementById("scissors_option").addEventListener("click", function () {
     // Store the player's choice in local storage
-    localStorage.setItem("playerChoice", "scissor");
+    localStorage.setItem("playerChoice", "scissors");
 });
 
 document.getElementById("paper_option").addEventListener("click", function () {
