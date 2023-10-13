@@ -70,6 +70,7 @@ body{
     top: 420px;
     left: 400px;
     z-index: 99;
+    box-shadow: 0 0 0 55px rgba(46, 154, 37, 0.7), 0 0 0 85px rgba(46, 154, 37, 0.5), 0 0 0 115px rgba(46, 154, 37, 0.3);
 }
 
 
@@ -85,7 +86,8 @@ body{
     position: absolute;
     width: 130px;
     height: 16px;
-    top: 340px;
+    top: 325px;
+    z-index: 99;
     font-size: 17px;
     font-weight: 600;
     line-height: 20px;

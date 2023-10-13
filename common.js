@@ -88,7 +88,7 @@ if (playerChoice && computerChoice) {
         element.style.height = "60px";
         element.style.width = "60px";
         element.style.backgroundColor = "white";
-        element.style.boxShadow = "0 0 20px rgba(0, 0, 0, 0.5)";
+        //element.style.boxShadow = "0 0 20px rgba(0, 0, 0, 0.5)";
     
         if (choice === "rock") {
             element.style.borderColor = "#0074B6";
