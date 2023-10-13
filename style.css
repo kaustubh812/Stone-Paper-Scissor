@@ -66,6 +66,7 @@ body{
 
 #rock{
     position: absolute;
+    cursor: pointer;
     width: 60px;
     height: 60px;
     top: 360px;
@@ -82,6 +83,7 @@ body{
 
 #scissor{
     position: absolute;
+    cursor: pointer;
     width: 57px;
     height: 60px;
     top: 363px;
@@ -99,6 +101,7 @@ body{
 
 #paper{
     position: absolute;
+    cursor: pointer;
     width: 60px;
     height: 60px;
     top: 548px;
