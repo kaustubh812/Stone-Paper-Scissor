@@ -63,13 +63,7 @@ body{
 
 /* Here we ended scorecard code*/
 
-#playerb{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    top: 415px;
-    left: 400px;
-}
+
 
 #player{
     position: absolute;
@@ -78,13 +72,7 @@ body{
     z-index: 99;
 }
 
-#computerb{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    top: 415px;
-    left: 950px;
-}
+
 
 #computer{
     position: absolute;

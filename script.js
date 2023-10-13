@@ -45,6 +45,9 @@ function playRound(playerChoice) {
     // Generating a random computer choice
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
+    // Store the computer's choice in local storage
+    localStorage.setItem("computerChoice", computerChoice);
+
     // Determining the winner of round
     if (playerChoice === computerChoice) {
         // It's a tie
@@ -55,6 +58,8 @@ function playRound(playerChoice) {
     ) {
         // You wins the round
         playerScore++;
+        // Redirect to playerwin.html
+        window.location.href = "playerwin.html";
     } else {
         // Computer wins the round
         computerScore++;
@@ -89,4 +94,21 @@ window.addEventListener('load', function(){
         computerScore = parseInt(storedComputerScore);
         document.querySelector(".win.com").textContent = computerScore
     }
+});
+
+
+
+document.getElementById("rock_option").addEventListener("click", function () {
+    // Store the player's choice in local storage
+    localStorage.setItem("playerChoice", "rock");
+});
+
+document.getElementById("scissors_option").addEventListener("click", function () {
+    // Store the player's choice in local storage
+    localStorage.setItem("playerChoice", "scissor");
+});
+
+document.getElementById("paper_option").addEventListener("click", function () {
+    // Store the player's choice in local storage
+    localStorage.setItem("playerChoice", "paper");
 });

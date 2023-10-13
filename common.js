@@ -32,3 +32,34 @@ const playButton = document.getElementById("playbutton");
 if (playButton) {
     playButton.addEventListener("click", playAgain);
 }
+
+
+
+// Example code in playerwin.html to retrieve and display choices
+const playerChoice = localStorage.getItem("playerChoice");
+const computerChoice = localStorage.getItem("computerChoice");
+
+// Map the choice names to the corresponding image file names
+const choiceImageMap = {
+    rock: "rock.png",
+    paper: "paper.png",
+    scissors: "scissor.png",
+};
+
+// Get the image elements
+const player = document.getElementById("player");
+const computer = document.getElementById("computer");
+
+// Set the src attribute of the image elements based on the choices
+if (playerChoice && computerChoice) {
+    player.src = choiceImageMap[playerChoice];
+    computer.src = choiceImageMap[computerChoice];
+}
+
+
+
+/* if (playerChoice && computerChoice) {
+    // Display the choices in the HTML
+    document.querySelector("#playerChoice").textContent = `You picked: ${playerChoice}`;
+    document.querySelector("#computerChoice").textContent = `Computer picked: ${computerChoice}`;
+} */
