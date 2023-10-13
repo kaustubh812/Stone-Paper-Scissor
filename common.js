@@ -33,6 +33,16 @@ if (playButton) {
     playButton.addEventListener("click", playAgain);
 }
 
+function hurrayPage(){
+    // Redirect to the hurray.html page
+    window.location.href = "hurray.html";
+}
+
+// Find the "nextbutton" element and add a click event listener
+const nextButton = document.getElementById("next_button");
+if(nextButton){
+    nextButton.addEventListener("click", hurrayPage);
+}
 
 
 // Example code in playerwin.html to retrieve and display choices
@@ -58,8 +68,28 @@ if (playerChoice && computerChoice) {
 
 
 
-/* if (playerChoice && computerChoice) {
+if (playerChoice && computerChoice) {
     // Display the choices in the HTML
     document.querySelector("#playerChoice").textContent = `You picked: ${playerChoice}`;
     document.querySelector("#computerChoice").textContent = `Computer picked: ${computerChoice}`;
-} */
+} 
+
+
+// Inside the playRound function after determining the winner
+const resultText = document.querySelector("h2");
+
+if (playerChoice === computerChoice) {
+    resultText.textContent = "It's a TIE";
+} else if (
+    (playerChoice === "rock" && computerChoice === "scissors") ||
+    (playerChoice === "paper" && computerChoice === "rock") ||
+    (playerChoice === "scissors" && computerChoice === "paper")
+) {
+    // You win
+    resultText.textContent = "YOU WON";
+} else {
+    // Computer wins
+    resultText.textContent = "YOU LOST";
+}
+
+
