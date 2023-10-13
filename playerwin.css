@@ -65,13 +65,26 @@ body{
 
 
 
-#player{
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0 0 0 55px rgba(46, 154, 37, 0.7), 0 0 0 85px rgba(46, 154, 37, 0.5), 0 0 0 115px rgba(46, 154, 37, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 0 30px rgba(46, 154, 37, 0.7), 0 0 0 60px rgba(46, 154, 37, 0.5), 0 0 0 90px rgba(46, 154, 37, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 55px rgba(46, 154, 37, 0.7), 0 0 0 85px rgba(46, 154, 37, 0.5), 0 0 0 115px rgba(46, 154, 37, 0.3);
+    }
+}
+
+#player {
     position: absolute;
     top: 420px;
     left: 400px;
     z-index: 99;
-    box-shadow: 0 0 0 55px rgba(46, 154, 37, 0.7), 0 0 0 85px rgba(46, 154, 37, 0.5), 0 0 0 115px rgba(46, 154, 37, 0.3);
+    animation: shadowAnimation 1s infinite alternate; /* Change the duration as needed */
 }
+
 
 
 
