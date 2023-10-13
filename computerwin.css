@@ -132,6 +132,7 @@ h3{
 
 #playbutton{
     position: absolute;
+    cursor: pointer;
     width: 174px;
     height: 44px;
     top: 540px;
@@ -166,6 +167,7 @@ h3{
     line-height: 25px;
     letter-spacing: 0.1em;
     text-align: center;
+    cursor: pointer;
 }
 
 .container{
@@ -201,10 +203,11 @@ body.rulesTab-active .container{
 
 #x{
     position: absolute;
+    cursor: pointer;
     width: 24px;
     height: 53px;
-    left: 279px;
-    top: -78px;
+    left: 283px;
+    top: -77px;
     font-family: 'Dangrek', cursive;
     font-size: 44px;
     font-weight: 400;
