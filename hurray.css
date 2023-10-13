@@ -10,7 +10,44 @@ body{
 
 /* Stars code starts here */
 
-.star{
+/* Define blinking animations for individual stars with delays */
+@keyframes blinkAnimation1 {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blinkAnimation2 {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    /* Add a delay to the second star animation */
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinkAnimation3 {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    /* Add a delay to the third star animation */
+    52% {
+        opacity: 1;
+    }
+}
+
+/* Apply animations to the stars */
+.star {
     position: absolute;
 }
 
@@ -19,6 +56,7 @@ body{
     height: 115px;
     top: 188px;
     left: 488px;
+    animation: blinkAnimation1 2s infinite;
 }
 
 .s2{
@@ -26,6 +64,7 @@ body{
     height: 103px;
     top: 55px;
     left: 850px;
+    animation: blinkAnimation2 3s infinite;
 }
 
 .s3{
@@ -33,6 +72,7 @@ body{
     height: 32px;
     top: 76px;
     left: 603px;
+    animation: blinkAnimation3 2s infinite;
 }
 
 .s4{
@@ -40,6 +80,7 @@ body{
     height: 32px;
     top: 109px;
     left: 725px;
+    animation: blinkAnimation1 3s infinite;
 }
 
 .s5{
@@ -47,6 +88,7 @@ body{
     height: 32px;
     top: 341px;
     left: 596px;
+    animation: blinkAnimation2 2s infinite;
 }
 
 .s6{
@@ -54,6 +96,7 @@ body{
     height: 130px;
     top: 246px;
     left: 890px;
+    animation: blinkAnimation3 1.7s infinite;
 }
 
 .s7{
@@ -61,6 +104,7 @@ body{
     height: 32px;
     top: 173px;
     left: 960px;
+    animation: blinkAnimation1 2s infinite;
 }
 
 .s9{
@@ -68,6 +112,7 @@ body{
     height: 68px;
     top: 127px;
     left: 560px;
+    animation: blinkAnimation2 3s infinite;
 }
 
 /* Stars code ends here */
