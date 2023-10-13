@@ -67,8 +67,8 @@ body{
 
 #player{
     position: absolute;
-    top: 455px;
-    left: 450px;
+    top: 420px;
+    left: 400px;
     z-index: 99;
 }
 
@@ -76,7 +76,7 @@ body{
 
 #computer{
     position: absolute;
-    top: 450px;
+    top: 420px;
     left: 985px;
     z-index: 99;
 }
@@ -85,7 +85,7 @@ body{
     position: absolute;
     width: 130px;
     height: 16px;
-    top: 350px;
+    top: 340px;
     font-size: 17px;
     font-weight: 600;
     line-height: 20px;
@@ -95,11 +95,11 @@ body{
 }
 
 .picktext.t1{
-    left: 417px;
+    left: 409px;
 }
 
 .picktext.t2{
-    left: 968px;
+    left: 1000px;
 }
 
 h2{
@@ -149,59 +149,6 @@ h3{
     text-align: center;
     border-style: solid;
 }
-
-#rock{
-    position: absolute;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    top: 360px;
-    left: 605px;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: #0074B6;
-    border-width: 17px;
-    padding: 20px;
-    background-color: white;
-    z-index: 99;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-#scissor{
-    position: absolute;
-    cursor: pointer;
-    width: 57px;
-    height: 60px;
-    top: 363px;
-    left: 868px;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: #BD00FF;
-    border-width: 17px;
-    padding: 20px;
-    background-color: white;
-    transform: rotate(5.27deg);
-    z-index: 99;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-#paper{
-    position: absolute;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    top: 548px;
-    left: 730px;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: #ffa943;
-    border-width: 17px;
-    padding: 20px;
-    background-color: white;
-    z-index: 99;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
 
 #rules_button{
     position: absolute;

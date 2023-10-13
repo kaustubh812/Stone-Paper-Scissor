@@ -85,6 +85,8 @@ if (playerChoice && computerChoice) {
         element.style.borderStyle = "solid";
         element.style.borderWidth = "17px";
         element.style.padding = "20px";
+        element.style.height = "60px";
+        element.style.width = "60px";
         element.style.backgroundColor = "white";
         element.style.boxShadow = "0 0 20px rgba(0, 0, 0, 0.5)";
     
