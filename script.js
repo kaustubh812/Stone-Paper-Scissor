@@ -11,9 +11,6 @@ closeRulesTab.addEventListener("click",function(){
     document.body.classList.remove("rulesTab-active");
 })
 
-
-
-
 // Here we started the logic behind the code
 
 // Declaring the variables for your and computer score

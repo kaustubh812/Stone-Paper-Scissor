@@ -106,7 +106,18 @@ if (playerChoice && computerChoice) {
     
     if (computerChoice) {
         applyChoiceStyles(computer, computerChoice);
-    }
-    
-    
+    }  
 }
+
+// Making the code short and adding shadow to the all chosen action
+
+// Get all elements with the "shadow" class
+let shadowElements = document.querySelectorAll('.shadow');
+
+// Define the box-shadow CSS property
+let boxShadowStyle = '0 0 20px rgba(0, 0, 0, 0.5)';
+
+// Apply the box-shadow to each shadow element
+shadowElements.forEach(element => {
+    element.style.boxShadow = boxShadowStyle;
+});
