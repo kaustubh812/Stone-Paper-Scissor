@@ -1,7 +1,10 @@
 body{
     background-color: #8CC461;
-    font-family:'Roboto', sans-serif;
     overflow-x: hidden;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Here we started scorecard code*/
@@ -49,7 +52,6 @@ body{
     letter-spacing: 0.1em;
     text-align: center;
     color: #656565;
-    font-family: 'Roboto', sans-serif;
 }
 
 .win{
