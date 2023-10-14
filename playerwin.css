@@ -172,7 +172,7 @@ h3{
 }
 
 
-#rules_button{
+#rules_button {
     position: absolute;
     cursor: pointer;
     width: 119px;
@@ -190,7 +190,15 @@ h3{
     line-height: 25px;
     letter-spacing: 0.1em;
     text-align: center;
+    transition: transform 0.2s, background-color 0.3s, color 0.3s; /* Add transitions for various properties */
 }
+
+#rules_button:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    background-color: #6FA749; /* Change the background color on hover */
+    color: #527E31; /* Change the text color on hover */
+}
+
 
 .container{
     position: fixed;
