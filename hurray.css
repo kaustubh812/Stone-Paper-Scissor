@@ -153,12 +153,12 @@ body{
     text-align: center;
 }
 
-#playbutton{
+#playbutton {
     position: absolute;
     cursor: pointer;
     width: 174px;
     height: 44px;
-    top: 600px;
+    top: 580px;
     left: 690px;
     border-radius: 9px;
     background-color: white;
@@ -167,10 +167,16 @@ body{
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.1em;
-    text-align: left;
-    color: #6B6B6B;
     text-align: center;
+    color: #6B6B6B;
     border-style: solid;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transitions for various properties */
+}
+
+#playbutton:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    background-color: #6B6B6B; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
 }
 
 /* Here rules section starts*/

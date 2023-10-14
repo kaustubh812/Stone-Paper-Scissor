@@ -145,7 +145,7 @@ h3{
     position: absolute;
 }
 
-#playbutton{
+#playbutton {
     position: absolute;
     cursor: pointer;
     width: 174px;
@@ -159,11 +159,18 @@ h3{
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.1em;
-    text-align: left;
-    color: #6B6B6B;
     text-align: center;
+    color: #6B6B6B;
     border-style: solid;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s; /* Add transitions for various properties */
 }
+
+#playbutton:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    background-color: #6B6B6B; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
+}
+
 
 #rules_button{
     position: absolute;
@@ -270,7 +277,7 @@ ul li::marker {
 
 /* Here rules section ends */  
 
-#next_button{
+#next_button {
     position: absolute;
     cursor: pointer;
     width: 119px;
@@ -289,4 +296,11 @@ ul li::marker {
     line-height: 25px;
     letter-spacing: 0.1em;
     text-align: center;
+    transition: transform 0.2s, background-color 0.3s, color 0.3s; /* Add transitions for various properties */
+}
+
+#next_button:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    background-color: #6FA749; /* Change the background color on hover */
+    color: #527E31; /* Change the text color on hover */
 }
