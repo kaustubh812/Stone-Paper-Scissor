@@ -165,8 +165,9 @@ h3{
     border-style: solid;
 }
 
-#rules_button{
+#rules_button {
     position: absolute;
+    cursor: pointer;
     width: 119px;
     height: 40px;
     top: 650px;
@@ -177,12 +178,21 @@ h3{
     color: white;
     background-color: #8CC461;
     border-style: solid;
+    font-family: Roboto;
     font-size: 21px;
     font-weight: 600;
     line-height: 25px;
     letter-spacing: 0.1em;
     text-align: center;
-    cursor: pointer;
+    transition: background-color 0.3s; /* Add a transition to the background-color property */
+}
+
+#rules_button:hover {
+    background-color: #6FA749; /* Change the background color on hover */
+}
+
+#rules_button:active {
+    background-color: #527E31; /* Change the background color when clicked */
 }
 
 .container{

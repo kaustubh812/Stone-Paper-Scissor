@@ -175,8 +175,9 @@ body{
 
 /* Here rules section starts*/
 
-#rules_button{
+#rules_button {
     position: absolute;
+    cursor: pointer;
     width: 119px;
     height: 40px;
     top: 650px;
@@ -192,8 +193,16 @@ body{
     font-weight: 600;
     line-height: 25px;
     letter-spacing: 0.1em;
-    cursor: pointer;
     text-align: center;
+    transition: background-color 0.3s; /* Add a transition to the background-color property */
+}
+
+#rules_button:hover {
+    background-color: #6FA749; /* Change the background color on hover */
+}
+
+#rules_button:active {
+    background-color: #527E31; /* Change the background color when clicked */
 }
 
 .container{
